@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1228</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1191</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layout">
+    <item>
+     <layout class="QHBoxLayout" name="header_layout">
+      <item>
+       <widget class="QPushButton" name="btn_start">
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_stop">
+        <property name="text">
+         <string>停止</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="form_layout">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="placeholderText">
+         <string>请输入商品ID和价格，例如：B0818JJJQQ8=88</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_add">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="table_layout">
+      <item>
+       <widget class="QTableWidget" name="table_widget">
+        <property name="rowCount">
+         <number>2</number>
+        </property>
+        <property name="columnCount">
+         <number>10</number>
+        </property>
+        <row/>
+        <row/>
+        <column>
+         <property name="text">
+          <string>标题</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>网址</string>
+         </property>
+        </column>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <item row="0" column="2">
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="foot_layout">
+      <item>
+       <widget class="QLabel" name="label_status">
+        <property name="text">
+         <string>未检测</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_reinit">
+        <property name="text">
+         <string>重新初始化</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_recheck">
+        <property name="text">
+         <string>重新检测</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_reset_count">
+        <property name="text">
+         <string>次数清零</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_delete">
+        <property name="text">
+         <string>删除检测项</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_alert">
+        <property name="text">
+         <string>SMTP报警配置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_proxy">
+        <property name="text">
+         <string>设置代理</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
